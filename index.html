@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetConnect - Solusi Jaringan Berbayar Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .tab-active {
+            border-bottom: 3px solid #667eea;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-network-wired text-indigo-600 text-2xl"></i>
+                <span class="text-xl font-bold text-gray-800">NetConnect</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 transition">Fitur</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600 transition">Harga</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 transition">Testimoni</a>
+                <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition">FAQ</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-600 hover:text-indigo-600 transition">Masuk</button>
+                <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Daftar</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Solusi Jaringan Berbayar Terpercaya</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Nikmati koneksi internet stabil, kecepatan tinggi, dan dukungan 24/7 untuk kebutuhan bisnis dan personal Anda</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Mulai Gratis</button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">Lihat Paket</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Fitur Unggulan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Dapatkan pengalaman internet terbaik dengan fitur-fitur premium yang kami tawarkan</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tachometer-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Kecepatan Tinggi</h3>
+                    <p class="text-gray-600">Nikmati kecepatan internet hingga 1 Gbps dengan teknologi fiber optic terkini</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Keamanan Terjamin</h3>
+                    <p class="text-gray-600">Lindungi data Anda dengan enkripsi tingkat enterprise dan firewall canggih</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dukungan 24/7</h3>
+                    <p class="text-gray-600">Tim support kami siap membantu Anda kapan saja melalui berbagai kanal</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wifi text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Jangkauan Luas</h3>
+                    <p class="text-gray-600">Akses internet stabil di mana saja dengan jaringan kami yang tersebar luas</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Monitoring Real-time</h3>
+                    <p class="text-gray-600">Pantau penggunaan dan performa jaringan Anda melalui dashboard intuitif</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Konfigurasi Fleksibel</h3>
+                    <p class="text-gray-600">Sesuaikan paket dan pengaturan jaringan sesuai kebutuhan spesifik Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pilih Paket Terbaik Anda</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Pilih paket yang sesuai dengan kebutuhan Anda. Upgrade atau kapan saja tanpa penalti</p>
+            </div>
+            
+            <!-- Billing Toggle -->
+            <div class="flex justify-center mb-8">
+                <div class="bg-white rounded-lg p-1 flex">
+                    <button id="monthly" class="px-6 py-2 rounded-md font-medium tab-active">Bulanan</button>
+                    <button id="yearly" class="px-6 py-2 rounded-md font-medium text-gray-500">Tahunan ( hemat 20% )</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Basic</h3>
+                        <p class="text-gray-600 mb-6">Cocok untuk penggunaan rumah tangga</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-gray-800">Rp 199.000</span>
+                            <span class="text-gray-600">/bulan</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Kecepatan hingga 50 Mbps</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Unlimited kuota</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>1 Device WiFi</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Support email</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times text-gray-400 mr-3"></i>
+                                <span>Static IP</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-200 text-gray-800 py-3 rounded-lg font-semibold hover:bg-gray-300 transition">Pilih Paket</button>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-indigo-500 card-hover relative">
+                    <div class="bg-indigo-500 text-white text-center py-2 text-sm font-semibold">POPULER</div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Pro</h3>
+                        <p class="text-gray-600 mb-6">Ideal untuk pekerja remote dan UKM</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-gray-800">Rp 349.000</span>
+                            <span class="text-gray-600">/bulan</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Kecepatan hingga 200 Mbps</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Unlimited kuota</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>5 Device WiFi</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Support 24/7</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>1 Static IP</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Pilih Paket</button>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Enterprise</h3>
+                        <p class="text-gray-600 mb-6">Solusi lengkap untuk perusahaan</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-gray-800">Rp 899.000</span>
+                            <span class="text-gray-600">/bulan</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Kecepatan hingga 1 Gbps</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Unlimited kuota</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Unlimited Device</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Dedicated support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>5 Static IP</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-900 transition">Pilih Paket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Apa Kata Pelanggan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kepuasan pelanggan adalah prioritas utama kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Budi Santoso</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Kecepatan internet sangat stabil, support responsif. Sangat recommended untuk bisnis!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Siti Nurhaliza</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Pemasangan cepat, harga terjangkau dengan kualitas premium. Puas sekali!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ahmad Fauzi</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sejak beralih ke NetConnect, produktivitas kerja meningkat drastis. Terima kasih!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pertanyaan Umum</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Temukan jawaban untuk pertanyaan yang sering diajukan</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="faq-item border-b">
+                        <button class="faq-question w-full text-left p-6 font-semibold flex justify-between items-center">
+                            <span>Apa saja metode pembayaran yang tersedia?</span>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                            Kami menerima pembayaran melalui transfer bank, kartu kredit, virtual account, dan e-wallet seperti GoPay, OVO, dan DANA.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item border-b">
+                        <button class="faq-question w-full text-left p-6 font-semibold flex justify-between items-center">
+                            <span>Bagaimana proses instalasinya?</span>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                            Setelah pendaftaran, tim teknisi kami akan menghubungi Anda dalam 1x24 jam untuk menjadwalkan instalasi. Proses instalasi biasanya memakan waktu 2-3 jam.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item border-b">
+                        <button class="faq-question w-full text-left p-6 font-semibold flex justify-between items-center">
+                            <span>Apakah ada kontrak berlangganan?</span>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                            Kami tidak mengikat pelanggan dengan kontrak jangka panjang. Anda bisa berhenti berlangganan kapan saja dengan pemberitahuan 30 hari sebelumnya.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question w-full text-left p-6 font-semibold flex justify-between items-center">
+                            <span>Bagaimana jika mengalami gangguan jaringan?</span>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </button>
+                        <div class="faq-answer hidden p-6 pt-0 text-gray-600">
+                            Tim support kami siap membantu 24/7. Anda bisa menghubungi kami melalui telepon, email, atau live chat untuk melaporkan gangguan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Siap Meningkatkan Pengalaman Internet Anda?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Bergabunglah dengan ribuan pelanggan puas yang telah mempercayai jaringan kami</p>
+            <button class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Mulai Sekarang</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-network-wired text-indigo-400 text-2xl"></i>
+                        <span class="text-xl font-bold">NetConnect</span>
+                    </div>
+                    <p class="text-gray-400">Solusi jaringan berbayar terpercaya untuk kebutuhan internet Anda</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Internet Rumah</a></li>
+                        <li><a href="#" class="hover:text-white transition">Internet Bisnis</a></li>
+                        <li><a href="#" class="hover:text-white transition">Dedicated Server</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cloud Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> (021) 1234-5678</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@netconnect.id</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Jakarta, Indonesia</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 NetConnect. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Billing Toggle
+        const monthlyBtn = document.getElementById('monthly');
+        const yearlyBtn = document.getElementById('yearly');
+        
+        monthlyBtn.addEventListener('click', () => {
+            monthlyBtn.classList.add('tab-active');
+            yearlyBtn.classList.remove('tab-active');
+            updatePrices('monthly');
+        });
+        
+        yearlyBtn.addEventListener('click', () => {
+            yearlyBtn.classList.add('tab-active');
+            monthlyBtn.classList.remove('tab-active');
+            updatePrices('yearly');
+        });
+        
+        function updatePrices(period) {
+            const prices = {
+                monthly: ['Rp 199.000', 'Rp 349.000', 'Rp 899.000'],
+                yearly: ['Rp 1.911.200', 'Rp 3.350.400', 'Rp 8.630.400']
+            };
+            
+            const priceElements = document.querySelectorAll('.text-4xl');
+            priceElements.forEach((el, index) => {
+                el.textContent = prices[period][index];
+            });
+            
+            const periodElements = document.querySelectorAll('.text-gray-600');
+            periodElements.forEach(el => {
+                el.textContent = period === 'monthly' ? '/bulan' : '/tahun';
+            });
+        }
+        
+        // FAQ Toggle
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
